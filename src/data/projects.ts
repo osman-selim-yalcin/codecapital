@@ -24,7 +24,7 @@ export const projects: Project[] = [
     ],
     stack: ["C", "Unix", "Parser", "Signals"],
     image: "/img/minishell.png",
-    repo: "https://github.com/…",
+    repo: "https://github.com/burakmat/minishell",
   },
   {
     slug: "cub3d",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     ],
     stack: ["C", "Raycasting", "Math"],
     image: "/img/cub3d.png",
-    repo: "https://github.com/…",
+    repo: "https://github.com/osman-selim-yalcin/cub3d",
   },
   {
     slug: "transcendence",
@@ -48,8 +48,8 @@ export const projects: Project[] = [
     highlights: ["WebSocket/Socket.IO", "JWT auth", "Docker-compose"],
     stack: ["React", "Node", "Postgres", "Docker"],
     image: "/img/transcendence.png",
-    repo: "https://github.com/…",
-    demo: "https://…",
+    repo: "https://github.com/osman-selim-yalcin/transcendence",
+   demo: "https://www.kayiperde.com/",
   },
   {
     slug: "bartech",
@@ -59,7 +59,9 @@ export const projects: Project[] = [
     highlights: ["Role-based auth", "Charting", "REST API"],
     stack: ["React", "Express", "MongoDB"],
     image: "/img/bartech.png",
-    repo: "https://github.com/…",
+    repo: "https://github.com/osman-selim-yalcin/bartech",
+    demo: "https://www.westbar.com.tr/",
+
   },
   {
     slug: "kayi-perde",
@@ -69,7 +71,7 @@ export const projects: Project[] = [
     highlights: ["Next.js & Tailwind", "Bileşen kütüphanesi", "State yönetimi"],
     stack: ["Next.js", "Tailwind", "MUI"],
     image: "/img/kayi.png",
-    repo: "https://github.com/…",
-    demo: "https://…",
+    repo: "https://github.com/osman-selim-yalcin/kayiperde",
+    demo: "https://www.kayiperde.com/",
   },
 ];
