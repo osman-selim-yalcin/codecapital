@@ -1,7 +1,6 @@
 // src/AppRouter.tsx
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./views/About";
-import Contact from "./views/Contact";
 import Home from "./views/Home";
 import ProjectDetail from "./views/ProjectDetail";
 import Projects from "./views/Projects";
@@ -25,7 +24,6 @@ export default function AppRouter() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

@@ -8,31 +8,31 @@ export default function RootLayout() {
         <nav className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
           <NavLink
             to="/"
-            className="flex items-center gap-2 font-semibold tracking-tight focus:outline-none focus:ring-2 focus:ring-[#60A5FA]/50 rounded"
+            className="flex items-center gap-2 font-semibold tracking-tight"
           >
             <Logo className="h-6 w-6" />
             <span>CodeCapital</span>
           </NavLink>
 
           <div className="hidden md:flex items-center gap-6 text-sm">
-            <NavLink
-              to="/projects"
-              className="hover:text-[#60A5FA] focus:outline-none focus:ring-2 focus:ring-[#60A5FA]/50 rounded"
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="/about"
-              className="hover:text-[#60A5FA] focus:outline-none focus:ring-2 focus:ring-[#60A5FA]/50 rounded"
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className="hover:text-[#60A5FA] focus:outline-none focus:ring-2 focus:ring-[#60A5FA]/50 rounded"
-            >
-              Contact
-            </NavLink>
+            {[
+              { to: "/projects", label: "Projects" },
+              { to: "/about", label: "About" },
+            ].map((i) => (
+              <NavLink
+                key={i.to}
+                to={i.to}
+                className={({ isActive }) =>
+                  `px-2 py-1 rounded transition-colors ${
+                    isActive
+                      ? "text-[#60A5FA] border-b-2 border-[#60A5FA]"
+                      : "hover:text-[#60A5FA]"
+                  }`
+                }
+              >
+                {i.label}
+              </NavLink>
+            ))}
           </div>
         </nav>
       </header>

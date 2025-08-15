@@ -46,10 +46,10 @@ export const projects: Project[] = [
     category: "Web",
     summary: "Real-time özellikli web app (auth, chat, oyun).",
     highlights: ["WebSocket/Socket.IO", "JWT auth", "Docker-compose"],
-    stack: ["React", "Node", "Postgres", "Docker"],
+    stack: ["React", "Node", "Postgres", "Docker", "Nestjs"],
     image: "/img/transcendence.png",
     repo: "https://github.com/osman-selim-yalcin/transcendence",
-   demo: "https://www.kayiperde.com/",
+    demo: "https://www.kayiperde.com/",
   },
   {
     slug: "bartech",
@@ -61,7 +61,6 @@ export const projects: Project[] = [
     image: "/img/bartech.png",
     repo: "https://github.com/osman-selim-yalcin/bartech",
     demo: "https://www.westbar.com.tr/",
-
   },
   {
     slug: "kayi-perde",
