@@ -8,6 +8,7 @@ type Person = {
   github: string;
   linkedin: string;
   avatarUrl?: string; // varsa kullanırız, yoksa initials
+  cvUrl?: string; // yeni eklenen alan
 };
 
 const people: Person[] = [
@@ -18,6 +19,7 @@ const people: Person[] = [
     email: "osmanyalcin989@gmail.com",
     github: "https://github.com/osman-selim-yalcin",
     linkedin: "https://linkedin.com/in/osman-yalçın-488078247",
+    cvUrl: "/cv/osman-cv.pdf", // public klasörüne koyarsın
   },
   {
     name: "Burak Mat",
@@ -26,6 +28,7 @@ const people: Person[] = [
     email: "burak.ali.mat@gmail.com",
     github: "https://github.com/burakmat",
     linkedin: "https://linkedin.com/in/burak-mat/",
+    // cvUrl: "/cv/burak-mat.pdf",
   },
 ];
 
@@ -47,9 +50,8 @@ export default function AboutContact() {
             key={p.name}
             className="group relative rounded-xl p-[1px] bg-gradient-to-br from-[#1F1F22] to-transparent hover:from-[#2a2a2f] transition"
           >
-            {/* iç kart */}
             <div className="rounded-xl border border-[#1F1F22] bg-[#111113] p-6 h-full flex flex-col">
-              {/* dekoratif arka plan  */}
+              {/* dekoratif arka plan */}
               <div
                 className="pointer-events-none absolute inset-0 rounded-xl opacity-5 group-hover:opacity-10 transition"
                 style={{
@@ -68,7 +70,6 @@ export default function AboutContact() {
                 </div>
               </div>
 
-              {/* ince ayraç */}
               <div className="my-5 h-px bg-gradient-to-r from-transparent via-[#1F1F22] to-transparent" />
 
               {/* skills */}
@@ -113,6 +114,16 @@ export default function AboutContact() {
                 >
                   <FaLinkedin size={16} />
                 </a>
+                {/* CV butonu */}
+                {p.cvUrl && (
+                  <a
+                    href={p.cvUrl}
+                    target="_blank"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#1F1F22] text-[#60A5FA] hover:text-[#93C5FD] hover:border-[#2a2a2f] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#60A5FA]/40 transition"
+                  >
+                    CV
+                  </a>
+                )}
               </div>
             </div>
           </article>
