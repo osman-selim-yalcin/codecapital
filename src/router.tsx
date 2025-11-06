@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import ProjectDetail from "./views/ProjectDetail";
 import Projects from "./views/Projects";
 import RootLayout from "./views/RootLayout";
+import ScrollToTop from "./components/ScroolToTop";
 
 function NotFound() {
   return (
@@ -18,6 +19,7 @@ function NotFound() {
 export default function AppRouter() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route element={<RootLayout />}>
           <Route index element={<Home />} />
