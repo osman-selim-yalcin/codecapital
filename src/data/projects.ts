@@ -123,7 +123,7 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "React", "Tailwind", "MUI"],
     image: "/img/topculab.png", // görseli /public/img'e koy
-    repo: "https://github.com/osman-selim-yalcin/topculab",
+    repo: "https://github.com/osman-selim-yalcin/topculab-react",
     demo: "https://topculab.com/", // gerçek domain neyse güncelle
   },
 ];
