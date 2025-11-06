@@ -77,4 +77,53 @@ export const projects: Project[] = [
     repo: "https://github.com/osman-selim-yalcin/kayiperde",
     demo: "https://www.kayiperde.com/",
   },
+  {
+    slug: "perdeno",
+    title: "Perdeno — Curtain ERP",
+    category: "Web",
+    summary:
+      "Gerçek bir işletme için geliştirilen ERP sistemi (sipariş, müşteri, faturalandırma, dashboard).",
+    highlights: [
+      "Dinamik widget tabanlı yönetici dashboard",
+      "Sipariş, müşteri, ürün, ödeme modülleri",
+      "AG-Grid + MobX ile yüksek performanslı UI",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "MobX", "Supabase", "MUI"],
+    image: "/img/perdeno.png", // <---- görseli buraya koy
+    // repo: "https://github.com/osman-selim-yalcin/perdeno", // yoksa sil
+    demo: "https://perdeno.com/", // yoksa sil
+  },
+  {
+    slug: "amusicly",
+    title: "Amusicly — AI Music & Video",
+    category: "Web",
+    summary:
+      "Prompt → Suno AI ile müzik → Leonardo AI ile otomatik video oluşturma.",
+    highlights: [
+      "Django REST API + MongoDB pipeline",
+      "AI müzik üretimi (Suno AI)",
+      "AI video üretimi (Leonardo AI)",
+      "React + MobX frontend",
+    ],
+    stack: ["Django", "MongoDB", "React", "MobX", "REST API", "AI APIs"],
+    image: "/img/amusicly.png", // <---- görsel ekle
+    // repo: "https://github.com/osman-selim-yalcin/amusicly", // repo varsa
+    // demo: "", // demo varsa ekle
+  },
+  {
+    slug: "topculab",
+    title: "TopcuLab — Research Group Website",
+    category: "Web",
+    summary:
+      "Doç. Dr. Aysun Güran Topcu’nun akademik araştırma grubu için modern landing page.",
+    highlights: [
+      "Minimal UI/UX + modern bileşen mimarisi",
+      "Responsive tasarım (mobil/tablet/desktop)",
+      "SEO & Lighthouse optimizasyonu",
+    ],
+    stack: ["Next.js", "React", "Tailwind", "MUI"],
+    image: "/img/topculab.png", // görseli /public/img'e koy
+    repo: "https://github.com/osman-selim-yalcin/topculab",
+    demo: "https://topculab.com/", // gerçek domain neyse güncelle
+  },
 ];
