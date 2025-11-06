@@ -13,6 +13,33 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "perdeno",
+    title: "Perdeno — Curtain ERP",
+    category: "Web",
+    summary:
+      "Gerçek bir işletme için geliştirilen ERP sistemi (sipariş, müşteri, faturalandırma, dashboard).",
+    highlights: [
+      "Dinamik widget tabanlı yönetici dashboard",
+      "Sipariş, müşteri, ürün, ödeme modülleri",
+      "AG-Grid + MobX ile yüksek performanslı UI",
+    ],
+    stack: ["Next.js", "React", "TypeScript", "MobX", "Supabase", "MUI"],
+    image: "/img/perdeno.png", // <---- görseli buraya koy
+    // repo: "https://github.com/osman-selim-yalcin/perdeno", // yoksa sil
+    demo: "https://perdeno.com/", // yoksa sil
+  },
+  {
+    slug: "kayi-perde",
+    title: "Kayı Perde",
+    category: "Web",
+    summary: "Next.js vitrin, sade UI/UX.",
+    highlights: ["Next.js & Tailwind", "Bileşen kütüphanesi", "State yönetimi"],
+    stack: ["Next.js", "Tailwind", "MUI"],
+    image: "/img/kayi.png",
+    repo: "https://github.com/osman-selim-yalcin/kayiperde",
+    demo: "https://www.kayiperde.com/",
+  },
+  {
     slug: "minishell",
     title: "minishell",
     category: "C",
@@ -66,33 +93,7 @@ export const projects: Project[] = [
     repo: "https://github.com/osman-selim-yalcin/bartech",
     demo: "https://www.westbar.com.tr/",
   },
-  {
-    slug: "kayi-perde",
-    title: "Kayı Perde",
-    category: "Web",
-    summary: "Next.js vitrin, sade UI/UX.",
-    highlights: ["Next.js & Tailwind", "Bileşen kütüphanesi", "State yönetimi"],
-    stack: ["Next.js", "Tailwind", "MUI"],
-    image: "/img/kayi.png",
-    repo: "https://github.com/osman-selim-yalcin/kayiperde",
-    demo: "https://www.kayiperde.com/",
-  },
-  {
-    slug: "perdeno",
-    title: "Perdeno — Curtain ERP",
-    category: "Web",
-    summary:
-      "Gerçek bir işletme için geliştirilen ERP sistemi (sipariş, müşteri, faturalandırma, dashboard).",
-    highlights: [
-      "Dinamik widget tabanlı yönetici dashboard",
-      "Sipariş, müşteri, ürün, ödeme modülleri",
-      "AG-Grid + MobX ile yüksek performanslı UI",
-    ],
-    stack: ["Next.js", "React", "TypeScript", "MobX", "Supabase", "MUI"],
-    image: "/img/perdeno.png", // <---- görseli buraya koy
-    // repo: "https://github.com/osman-selim-yalcin/perdeno", // yoksa sil
-    demo: "https://perdeno.com/", // yoksa sil
-  },
+
   {
     slug: "amusicly",
     title: "Amusicly — AI Music & Video",
