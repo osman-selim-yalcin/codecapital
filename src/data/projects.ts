@@ -40,20 +40,6 @@ export const projects: Project[] = [
     demo: "https://www.kayiperde.com/",
   },
   {
-    slug: "minishell",
-    title: "minishell",
-    category: "C",
-    summary: "POSIX uyumlu mini shell, pipe/redirect ve built-in komutlar.",
-    highlights: [
-      "Pipeline & redirection desteği",
-      "Job control ve sinyal yönetimi",
-      "Bash benzeri parsing ve heredoc",
-    ],
-    stack: ["C", "Unix", "Parser", "Signals"],
-    image: "/img/minishell.png",
-    repo: "https://github.com/burakmat/minishell",
-  },
-  {
     slug: "cub3d",
     title: "cub3d",
     category: "C",
@@ -67,6 +53,21 @@ export const projects: Project[] = [
     image: "/img/cub3d.png",
     repo: "https://github.com/osman-selim-yalcin/cub3d",
   },
+  {
+    slug: "minishell",
+    title: "minishell",
+    category: "C",
+    summary: "POSIX uyumlu mini shell, pipe/redirect ve built-in komutlar.",
+    highlights: [
+      "Pipeline & redirection desteği",
+      "Job control ve sinyal yönetimi",
+      "Bash benzeri parsing ve heredoc",
+    ],
+    stack: ["C", "Unix", "Parser", "Signals"],
+    image: "/img/minishell.png",
+    repo: "https://github.com/burakmat/minishell",
+  },
+
   {
     slug: "transcendence",
     title: "Transcendence",
